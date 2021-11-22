@@ -1,10 +1,10 @@
-import React, { ReactNode } from "react";
+import React from "react";
 import "./App.scss";
 
 interface PropsInterface {
   children: React.ReactNode;
 }
-const App = (props: PropsInterface) => {
+const App: React.FC<PropsInterface> = (props: PropsInterface) => {
   return <>{props.children}</>;
 };
 

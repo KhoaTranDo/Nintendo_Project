@@ -1,17 +1,10 @@
 /** @format */
 
 import React from "react";
-
-const styles = {
-  text: {
-    color: "red",
-  },
-};
-
-const homepage = () => {
+const homepage = (): JSX.Element => {
   return (
     <>
-      <h1 style={styles.text}>Homepage</h1>
+      <h1>Homepage</h1>
     </>
   );
 };

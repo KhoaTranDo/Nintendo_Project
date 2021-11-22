@@ -5,7 +5,12 @@ interface typeDataExam {
 const initialState: typeDataExam = {
   data: "",
 };
-const examReducer = (state = initialState, action: string) => {
+const examReducer = (
+  state = initialState,
+  action: { exam1: string; exam2: string }
+): typeDataExam => {
+  if (action) {
+  }
   return state;
 };
 

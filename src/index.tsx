@@ -1,5 +1,3 @@
-/** @format */
-
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.scss";
@@ -15,9 +13,7 @@ ReactDOM.render(
       <Router>
         <App>
           <Routes>
-            <Route path="/" element={<Homepage />}></Route>
-            {/*  <Routes>
-          <Route path="/*"" element={<Homepage />}></Route> đang tham khảo v6 */}
+            <Route path="/" element={<Homepage />} />
           </Routes>
         </App>
       </Router>
