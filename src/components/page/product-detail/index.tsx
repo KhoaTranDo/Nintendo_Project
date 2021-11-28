@@ -1,7 +1,10 @@
-/** @format */
-
 import React from "react";
 
-export default function ProductDetail() {
-  return <div>ProductDetail</div>;
-}
+const ProductDetail = (): JSX.Element => {
+  return (
+    <>
+      <h1>Product detail</h1>
+    </>
+  );
+};
+export default ProductDetail;
