@@ -1,0 +1,9 @@
+$text: red;
+
+.btn {
+  &:hover {
+    cursor: pointer;
+    color: $text;
+  }
+}
+
