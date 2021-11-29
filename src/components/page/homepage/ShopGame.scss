@@ -1,0 +1,46 @@
+.homepage-ads {
+  background-color: hsl(355, 100%, 45%);
+  margin: 20px auto;
+  width: 1200px;
+  color: white;
+  flex-wrap: nowrap;
+  &__game {
+    display: flex;
+    justify-content: space-around;
+    &-content {
+      display: flex;
+      &--text {
+        width: 70%;
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        font-size: 30px;
+      }
+      &--button {
+        color: white;
+        display: flex;
+        width: 20%;
+        height: 50px;
+        margin: auto;
+        border-radius: 6px;
+        border: none;
+        align-items: center;
+        justify-content: center;
+        padding: 0 10px;
+        background-color: rgba(0, 0, 0, 0.3);
+        span {
+          font-size: 15px;
+          padding-right: 10px;
+        }
+        &:hover {
+          background-color: rgba(0, 0, 0, 0.6);
+          width: 21%;
+          height: 55px;
+        }
+      }
+      &--icon {
+        font-size: 20px;
+      }
+    }
+  }
+}
