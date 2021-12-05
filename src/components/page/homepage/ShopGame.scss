@@ -4,6 +4,7 @@
   color: white;
 
   &__game {
+    border-top: 1px hsl(0, 0%, 85%) solid;
     border-bottom: 1px hsl(0, 0%, 85%) solid;
     display: flex;
     padding: 50px 0;
