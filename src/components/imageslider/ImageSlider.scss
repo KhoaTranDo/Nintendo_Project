@@ -1,7 +1,15 @@
 .slider {
   &-image-components {
-    padding: 20px 0;
-    margin: 10px 0;
+    &__header {
+      width: 1180px;
+      margin: 0 auto;
+      color: gray;
+      padding: 0;
+      h1 {
+        margin: 0;
+        padding: 0;
+      }
+    }
   }
   width: 90%;
   margin: 30px auto;

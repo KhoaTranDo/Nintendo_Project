@@ -3,9 +3,10 @@ import Slider from "react-slick";
 import React from "react";
 import "./ImageSlider.scss";
 import { BsChevronRight, BsChevronLeft } from "react-icons/bs";
-import dataDemo from "./fakeData.json";
+
 interface PropsInterface {
   children: React.ReactNode;
+  title?: string;
 }
 
 interface ClickProps {
@@ -68,33 +69,16 @@ const settingsSlider = {
 const imageSlider: React.FC<PropsInterface> = (
   props: PropsInterface
 ): JSX.Element => {
-  const renderData = () => {
-    interface typeValue {
-      id: string;
-      img: string;
-      content: string;
-    }
-    return dataDemo.map((value: typeValue) => {
-      return (
-        <div key={value.id}>
-          <div className="slider slider--image">
-            <img src={value.img} />
-          </div>
-          <div className="slider slider--content">
-            <h3>{value.content}</h3>
-          </div>
-        </div>
-      );
-    });
-  };
   return (
     <>
       <div className="slider-image-components">
+        <div className="slider-image-components__header">
+          <h1>{props.title}</h1>
+        </div>
         <Slider {...settingsSlider} className="list-image-slider">
-          {renderData()}
+          {props.children}
         </Slider>
       </div>
-      {props.children}
     </>
   );
 };
